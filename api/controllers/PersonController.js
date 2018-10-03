@@ -7,6 +7,19 @@
 
 module.exports = {
     create: async function (req, res) {
+
+        if (req.method == "GET")
+            return res.view('person/create');
+    
+        if (typeof req.body.Person === "undefined")
+            return res.badRequest("Form-data not received.");
+    
+        await Person.create(req.body.Person);
+    
+        return res.ok("Successfully created!");
+    },
+
+    create: async function (req, res) {
         if (req.method == "POST") {
 
             await Person.create(req.body.Person);
