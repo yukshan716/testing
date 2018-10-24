@@ -18,7 +18,7 @@ module.exports = {
     },
     age: {
       type: "number"
-    }
+    },
 
     
 
@@ -31,6 +31,11 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+
+    worksFor: {
+      collection: 'User',
+      via: 'supervises'
+    }
 
   },
 
