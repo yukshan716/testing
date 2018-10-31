@@ -12,7 +12,7 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-  
+
     name: {
       type: "string"
     },
@@ -20,7 +20,10 @@ module.exports = {
       type: "number"
     },
 
-    
+    birthDate: {
+      type: 'ref',
+      columnType: 'datetime'
+    },
 
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -46,7 +49,7 @@ module.exports = {
 
     return null;        // falsy
 
-},
+  },
 
 };
 
